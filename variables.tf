@@ -32,24 +32,24 @@ variable "vpc_public_subnets" {
 
 variable "vpc_enable_nat_gateway" {
   description = "Enable NAT gateway for VPC"
-  type    = bool
-  default = true
+  type        = bool
+  default     = true
 }
 
 variable "ami" {
-type = string
-default = "ami-0323c3dd2da7fb37d"
+  type    = string
+  default = "ami-0323c3dd2da7fb37d"
 }
 
 variable "type" {
-type = string
-default = "t2.micro"
+  type    = string
+  default = "t2.micro"
 }
 
 variable "vpc_tags" {
   description = "Tags to apply to resources created by VPC module"
   type        = map(string)
-  default     = {
+  default = {
     Terraform   = "true"
     Environment = "dev"
   }

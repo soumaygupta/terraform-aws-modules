@@ -38,3 +38,4 @@ module "ec2_instances" {
     Terraform   = "true"
     Environment = "dev"
   }
+}
